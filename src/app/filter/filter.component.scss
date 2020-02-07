@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+
+.filter {
+  position: relative;
+
+  &__controls {
+    margin-bottom: 30px;
+
+    input {
+      font-family: $f-montserrat;
+      font-size: 1.2em;
+    }
+  }
+}

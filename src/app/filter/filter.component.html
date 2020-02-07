@@ -1,0 +1,25 @@
+<div class="filter">
+  <div class="filter__controls">
+    <input
+      #inputMin
+      pattern="[0-9]"
+      class='filter__input'
+      [(ngModel)]="min"
+      (ngModelChange)="inputListeners()"
+      (keydown)="checkKeyDown($event, 0)"
+    />
+    <span>-</span>
+    <input
+      #inputMax
+      pattern="[0-9]"
+      class='filter__input'
+      [(ngModel)]="max"
+      (ngModelChange)="inputListeners()"
+      (keydown)="checkKeyDown($event, 1)"
+    />
+  </div>
+  <div
+    #slider
+    class="filter__slider"
+  ></div>
+</div>
